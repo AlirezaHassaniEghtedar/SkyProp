@@ -1,16 +1,32 @@
 @import url(fontiran.css);
 
-* , 
-*::before , 
-*::after {
-    box-sizing: border-box;
+:root {
+  --color-primary: #3d8bf2;
+  --color-blue-01: rgba(195, 219, 251, 0.5);
+  --color-blue-02: rgba(226, 238, 253, 1);
+  --color-blue-03: rgba(236, 243, 254, 1);
+  --color-text-01: #474747;
+  --color-text-02: #363636;
+  --color-text-03: #27538C;
+  --color-white: #ffffff;
+}
 
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-family: 'Yekan Bakh' , system-ui;
+  font-family: "Yekan Bakh", system-ui;
+  font-feature-settings: "kern" on, "liga" on, "dlig" on;
+  -moz-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+  -webkit-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+  -ms-font-feature-settings: "kern" on, "liga" on, "dlig" on;
+  -o-font-feature-settings: "kern" on, "liga" on, "dlig" on;
 }
 
 input,
@@ -23,6 +39,240 @@ legend,
 datalist,
 output,
 option,
-optgroup {
-    font-family: inherit;
+optgroup,
+a {
+  font-family: inherit;
+}
+
+.hover-Y {
+  transition: transform ease 0.3s;
+}
+
+.hover-Y:hover {
+  transform: translateY(-0.25rem);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 108px;
+  padding-block-start: 1.5rem;
+  padding-block-end: 3rem;
+
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    .logo:hover {
+      cursor: pointer;
+    }
+
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+
+        li:hover {
+          transform: translateY(-0.25rem);
+        }
+
+        li {
+          transition: transform ease 0.3s;
+
+          a {
+            text-decoration: none;
+            color: var(--color-text-01);
+            font-size: 1.25rem;
+
+            &.active {
+              color: var(--color-primary);
+              border-bottom: 2px solid var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+
+    a {
+      background: var(--color-blue-01);
+      display: flex;
+      border-radius: 0.25rem;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.25rem;
+      }
+    }
+  }
+}
+
+main {
+  padding-inline: 108px;
+
+  .heroSection {
+    .mySwiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          gap: 4.75rem;
+          .right-section {
+            padding-block-start: 1.5rem;
+
+            span {
+              font-size: 1.75rem;
+              font-weight: 400;
+              color: var(--color-text-01);
+            }
+
+            h1 {
+              font-weight: 700;
+              font-size: 3rem;
+              color: var(--color-primary);
+              margin-block: 1.25rem;
+            }
+
+            p {
+              color: var(--color-text-02);
+              font-size: 1.125rem;
+              font-weight: 300;
+              margin-block-end: 1.5rem;
+            }
+
+            .action-buttons {
+              display: flex;
+              gap: 1.5rem;
+              flex-wrap: wrap;
+
+              a:nth-child(1) {
+                background: var(--color-primary);
+                color: var(--color-white);
+                gap: 1.25rem;
+                padding: 0.5rem 3.25rem;
+              }
+
+              a:nth-child(2) {
+                background: var(--color-blue-02);
+                color: var(--color-primary);
+                padding: 0.5rem 5rem;
+              }
+
+              a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                font-size: 1.5rem;
+                font-weight: 400;
+                border-radius: 0.5rem;
+              }
+            }
+          }
+
+          .left-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(
+              to left,
+              rgba(85, 210, 225, 0.14),
+              rgba(61, 139, 242, 0.07)
+            );
+            border-radius: 50%;
+            padding: 25px;
+
+            .background-layer-01 {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-image: linear-gradient(
+                to right,
+                rgba(85, 210, 225, 0.14),
+                rgba(61, 139, 242, 0.07)
+              );
+              border-radius: 50%;
+
+              img {
+                max-width: 392px;
+                max-height: 392px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cards-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        color: var(--color-text-03);
+        margin-bottom: 5px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 1.5rem;
+
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            gap: 10px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 30px;
+            background: var(--color-blue-03);
+
+            &.down {
+                margin-top: 70px;
+            }
+
+            &.up {
+                margin-bottom: 70px;
+            }
+
+            img {
+                max-width: 150px;
+            }
+
+            p {
+                color: var(--color-text-03);
+            }
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+    main {
+        & .heroSection {
+          & .mySwiper {
+            & .swiper-wrapper {
+              & .swiper-slide {
+                & .left-section {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
 }
