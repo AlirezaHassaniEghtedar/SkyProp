@@ -1,7 +1,7 @@
 @import url(fontiran.css);
 
 :root {
-  --color-primary: #3d8bf2;
+  --color-primary: #3470bf;
   --color-blue-01: rgba(195, 219, 251, 0.5);
   --color-blue-02: rgba(226, 238, 253, 1);
   --color-blue-03: rgba(236, 243, 254, 1);
@@ -734,22 +734,22 @@ footer {
     & .right-section {
       nav {
         .upper-section {
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            .nav-logo {
-                display: inline-block;
-                max-width: 150px;
-              }
-      
-              .close-btn {
-                display: inline-block;
-                color: var(--color-white);
-                cursor: pointer;
-                font-size: 2rem;
-              }
+          padding: 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .nav-logo {
+            display: inline-block;
+            max-width: 150px;
+          }
+
+          .close-btn {
+            display: inline-block;
+            color: var(--color-white);
+            cursor: pointer;
+            font-size: 2rem;
+          }
         }
       }
 
@@ -765,13 +765,14 @@ footer {
     }
 
     padding-inline: 16px;
+    
     & .right-section {
       & nav {
         &.active {
-            opacity: 100%;
-            transform: translateX(0);
+          opacity: 100%;
+          transform: translateX(0);
         }
-        
+
         transition: all ease 0.5s;
         opacity: 0;
         transform: translateX(100%);
@@ -946,40 +947,44 @@ footer {
       }
     }
   }
+
+  main {
+    .section-01 {
+      & .right-section {
+        & img {
+          max-width: 100%;
+        }
+      }
+  
+      & .left-section {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    & .section-02 {
+      & .left-section {
+        & img {
+          max-width: 100%;
+        }
+      }
+  
+      & .right-section {
+        h3 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  
+    & .prefooter {
+      .left-section {
+        & img {
+          max-width: 100% !important;
+        }
+      }
+    }
+  }
 }
 
-main {
-  & .section-01 {
-    & .right-section {
-      & img {
-        max-width: 100%;
-      }
-    }
 
-    & .left-section {
-      h3 {
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  & .section-02 {
-    & .left-section {
-      & img {
-        max-width: 100%;
-      }
-    }
-
-    & .right-section {
-      h3 {
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  & .left-section {
-    & img {
-      max-width: 100% !important;
-    }
-  }
-}
