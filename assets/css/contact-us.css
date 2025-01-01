@@ -85,7 +85,8 @@ main {
 
           input:not([type="submit"]):hover,
           input:not([type="submit"]):focus,
-          textarea {
+          textarea:hover ,
+          textarea:focus {
             border-color: var(--color-primary);
             color: var(--color-primary);
           }

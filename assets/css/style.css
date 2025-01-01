@@ -1,12 +1,13 @@
 @import url(fontiran.css);
 
 :root {
-  --color-primary: #3470bf;
+  --color-primary: #3D8BF2;
   --color-blue-01: rgba(195, 219, 251, 0.5);
   --color-blue-02: rgba(226, 238, 253, 1);
   --color-blue-03: rgba(236, 243, 254, 1);
   --color-blue-04: rgba(195, 219, 251, 0.25);
   --color-blue-05: rgba(195, 219, 251, 0.75);
+  --color-blue-06: #316FC2;
   --color-text-01: #474747;
   --color-text-02: #363636;
   --color-text-03: #27538c;
