@@ -84,6 +84,10 @@ main {
           img {
             max-width: 184px;
           }
+
+          img:hover {
+            filter: saturate(1.5);
+          }
         }
       }
 
