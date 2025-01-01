@@ -142,12 +142,8 @@ main {
         }
 
         .about-us-social-medias {
-            flex-flow: column;
+          flex-flow: column;
 
-            h2 {
-                font-size: 1.5rem;
-            }
-            
           .left-section {
             display: flex;
             flex-flow: column;
@@ -196,32 +192,46 @@ main {
       justify-content: center;
     }
   }
+
+  .about-us-social-medias {
+    .right-section {
+        h2 {
+            font-size: 1.5rem !important;
+        }
+    }
+  }
 }
 
 @media only screen and (max-width: 496px) {
   main {
-    .about-us-section-01 {
-      & .left-section {
-        & img {
-          max-width: 100% !important;
+    .about-us {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      .about-us-section-01 {
+        & .left-section {
+          & img {
+            max-width: 100% !important;
+          }
         }
       }
-    }
 
-    & .about-us-section-02 {
-      & .right-section {
-        & img {
-          max-width: 100% !important;
+      & .about-us-section-02 {
+        & .right-section {
+          & img {
+            max-width: 100% !important;
+          }
         }
       }
-    }
 
-    .about-us-social-medias {
+      .about-us-social-medias {
         .left-section {
-            img {
-                max-width: 100% !important;
-            }
+          img {
+            max-width: 100% !important;
+          }
         }
+      }
     }
   }
 }
