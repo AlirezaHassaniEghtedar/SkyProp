@@ -6,6 +6,7 @@ main {
     align-items: center;
     gap: 30px;
     padding-inline: 16px;
+    padding-block-start: 50px;
 
     .image-container {
       position: relative;
