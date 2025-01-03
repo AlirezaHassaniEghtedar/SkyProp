@@ -20,6 +20,12 @@
   --color-text-10: #919191;
   --color-border-bottom-01: rgba(21 , 49 , 85 , 0.15);
   --color-white: #ffffff;
+
+  --color-dashboard-bg: #F6F9FE;
+  --color-dashboard-bg-primary: #E3ECFC;
+  --color-dashboard-text-01: rgba(80 , 80 , 80 , 0.35);
+  --color-dashboard-text-02: rgba(140 , 140 , 140 , 1);
+  --color-dashboard-border : rgba(140 , 140 , 140 , 0.15);
 }
 
 *,

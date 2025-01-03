@@ -83,6 +83,7 @@ main {
 
           img {
             max-width: 184px;
+            transition: filter ease 0.3s;
           }
 
           img:hover {
