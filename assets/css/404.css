@@ -5,6 +5,7 @@ main {
         justify-content: center;
         align-items: center;
         gap: 30px;
+        padding-inline: 16px;
         
         img {
             max-width: 600px;
@@ -45,7 +46,7 @@ main {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     main {
         & .not-found-container {
           & img {
@@ -55,7 +56,11 @@ main {
 
         & .bottom-section {
             & h1 {
-              font-size: 1.5rem;
+              font-size: 1.5rem !important;
+            }
+
+            a {
+                margin-top: 10px !important;
             }
           }
       }
