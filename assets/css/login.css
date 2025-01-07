@@ -60,6 +60,7 @@
               right: 15px;
               transform: translateY(-50%);
               background: var(--color-blue-02);
+              padding-inline: 5px;
               color: var(--color-text-09);
             }
 
@@ -282,7 +283,7 @@
         }
     }
     .right-login-section {
-      padding: 25px;
+      padding: 25px 16px;
     }
   }
 }
