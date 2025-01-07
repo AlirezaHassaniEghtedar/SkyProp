@@ -142,6 +142,7 @@ body {
                 display: flex;
                 flex-flow: column;
                 text-align: center;
+                flex-wrap: wrap;
                 background: var(--color-primary);
                 padding: 20px 15px;
                 border-radius: 8px;
@@ -149,7 +150,7 @@ body {
                 align-items: center;
                 flex-grow: 1;
                 flex-shrink: 1;
-                width: calc(33% - 30px);
+                width: min(100% , 345px);
 
                 
                 img {
