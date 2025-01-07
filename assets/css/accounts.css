@@ -13,13 +13,13 @@ body {
     top: 0;
     right: 0;
     height: 100%;
-    border-left: 1px solid var(--color-dashboard-border);
     transition: all ease 0.3s;
 
     .sidebar-header {
       display: flex;
       justify-content: center;
       align-items: center;
+      border-left: 1px solid var(--color-dashboard-border);
 
       span.close-sidebar {
         display: none;
@@ -36,6 +36,7 @@ body {
     .sidebar-menu {
       padding-inline: 10px;
       overflow-y: auto;
+      border-left: 1px solid var(--color-dashboard-border);
 
       div.menu {
         border-top: 1px solid var(--color-dashboard-border);
