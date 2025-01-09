@@ -8,6 +8,8 @@
   --color-blue-04: rgba(195, 219, 251, 0.25);
   --color-blue-05: rgba(195, 219, 251, 0.75);
   --color-blue-06: #316fc2;
+  --color-blue-07: #ECF3FE;
+  --color-blue-08: #E2EEFD;
   --color-text-01: #474747;
   --color-text-02: #363636;
   --color-text-03: #27538c;
@@ -28,6 +30,8 @@
   --color-dashboard-text-02: rgba(140, 140, 140, 1);
   --color-dashboard-border: rgba(140, 140, 140, 0.15);
   --color-dashboard-border-02: rgba(140, 140, 140, 0.4);
+
+  --color-alarm : #FF0000;
 }
 
 *,
