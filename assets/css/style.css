@@ -31,7 +31,7 @@
   --color-dashboard-border: rgba(140, 140, 140, 0.15);
   --color-dashboard-border-02: rgba(140, 140, 140, 0.4);
 
-  --color-alarm : #FF0000;
+  --color-alarm: #FF0000;
   --color-code-green: #23B362;
 }
 
@@ -83,9 +83,9 @@ a {
 
 .dashboard {
   & .sidebar {
-      .sidebar-menu {
-          background: var(--color-dashboard-bg-primary);
-      }
+    .sidebar-menu {
+      background: var(--color-dashboard-bg-primary);
+    }
   }
 }
 
@@ -119,6 +119,7 @@ header {
       .close-btn {
         display: none;
       }
+
       ul {
         display: flex;
         list-style: none;
@@ -167,11 +168,13 @@ header {
 main {
   .heroSection {
     padding-inline: 108px;
+
     .mySwiper {
       .swiper-wrapper {
         .swiper-slide {
           display: flex;
           gap: 4.75rem;
+
           .right-section {
             padding-block-start: 1.5rem;
 
@@ -229,11 +232,9 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: linear-gradient(
-              to left,
-              rgba(85, 210, 225, 0.14),
-              rgba(61, 139, 242, 0.07)
-            );
+            background-image: linear-gradient(to left,
+                rgba(85, 210, 225, 0.14),
+                rgba(61, 139, 242, 0.07));
             border-radius: 50%;
             padding: 25px;
 
@@ -241,11 +242,9 @@ main {
               display: flex;
               justify-content: center;
               align-items: center;
-              background-image: linear-gradient(
-                to right,
-                rgba(85, 210, 225, 0.14),
-                rgba(61, 139, 242, 0.07)
-              );
+              background-image: linear-gradient(to right,
+                  rgba(85, 210, 225, 0.14),
+                  rgba(61, 139, 242, 0.07));
               border-radius: 50%;
 
               img {
@@ -329,6 +328,7 @@ main {
       align-items: center;
       gap: 20px;
       text-align: center;
+
       h3 {
         font-size: 2rem;
         font-weight: 700;
@@ -392,11 +392,14 @@ main {
 
     .swiper-wrapper-container {
       margin-top: 50px;
+
       .swiper-container {
         .mySwiper {
           padding-inline: 108px;
+
           .swiper-wrapper {
             display: flex;
+
             .plan {
               background: var(--color-primary);
               border-radius: 12px;
@@ -483,6 +486,7 @@ main {
       align-items: center;
       gap: 20px;
       text-align: center;
+
       h3 {
         font-size: 2rem;
         font-weight: 700;
@@ -515,6 +519,7 @@ main {
         .swiper-slide {
           a {
             text-decoration: none;
+
             img {
               width: 100%;
               border-radius: 8px;
@@ -587,9 +592,11 @@ footer {
   .upper-section {
     display: flex;
     justify-content: space-between;
+
     .right-section {
       width: 25%;
       text-align: justify;
+
       a {
         img {
           max-width: 163px;
@@ -612,11 +619,13 @@ footer {
         font-weight: 700;
         margin-bottom: 20px;
       }
+
       ul {
         list-style: none;
         display: flex;
         flex-flow: column;
         gap: 10px;
+
         li {
           transition: all ease 0.3s;
 
@@ -675,37 +684,41 @@ footer {
 @media only screen and (max-width: 1300px) {
   main {
     & .plans-section {
-        & .swiper-wrapper-container {
-            & .swiper-container {
-                & .mySwiper {
-                    .swiper-button-next, .swiper-button-prev {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
+      & .swiper-wrapper-container {
+        & .swiper-container {
+          & .mySwiper {
 
-main {
-  & .videos-section {
-      & .mySwiper {
-          .swiper-button-next, .swiper-button-prev {
+            .swiper-button-next,
+            .swiper-button-prev {
               display: none;
+            }
           }
+        }
       }
+    }
   }
-}
-  
+
+  main {
+    & .videos-section {
+      & .mySwiper {
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          display: none;
+        }
+      }
+    }
+  }
+
   main {
     & .heroSection {
       padding-inline: 16px;
+
       & .mySwiper {
         & .swiper-wrapper {
           & .swiper-slide {
             & .right-section {
-              & span {
-              }
+              & span {}
             }
 
             & .left-section {
@@ -806,10 +819,12 @@ main {
         display: inline-block;
       }
 
-      .logo {
+      .logo-container {
         position: absolute;
         right: 50%;
         transform: translateX(50%);
+
+        .logo {}
       }
     }
 
@@ -833,6 +848,7 @@ main {
         top: 0;
         right: 0;
         padding: 10px;
+
         ul {
           overflow-y: auto;
           flex-flow: column;
@@ -844,6 +860,7 @@ main {
 
           li {
             width: 100%;
+
             a {
               color: var(--color-white);
               display: inline-block;
@@ -885,6 +902,7 @@ main {
 
         & .card {
           width: 100%;
+
           &.up {
             margin-bottom: 0px;
           }
@@ -912,6 +930,7 @@ main {
       justify-content: center;
     }
   }
+
   .section-02 {
     flex-flow: column;
     gap: 20px !important;
@@ -965,6 +984,7 @@ main {
             & .right-section {
               & .action-buttons {
                 gap: 0.5rem;
+
                 & a {
                   width: 100%;
                 }
@@ -998,6 +1018,16 @@ main {
         max-width: 100px;
       }
     }
+
+    & .action-buttons {
+      & a {
+          img {
+              width: 2rem;
+              height: 2rem;
+              padding: 5px !important;
+          }
+      }
+  }
   }
 
   main {
