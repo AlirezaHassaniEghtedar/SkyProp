@@ -85,7 +85,7 @@ a {
 .dashboard {
   & .sidebar {
     z-index: 10;
-    
+
     .sidebar-menu {
       background: var(--color-dashboard-bg-primary);
     }
@@ -1020,17 +1020,21 @@ footer {
       & .logo {
         max-width: 100px;
       }
+
+      .mobile-menu-icon {
+        max-width: 25px;
+      }
     }
 
     & .action-buttons {
       & a {
-          img {
-              width: 2rem;
-              height: 2rem;
-              padding: 5px !important;
-          }
+        img {
+          width: 2rem;
+          height: 2rem;
+          padding: 5px !important;
+        }
       }
-  }
+    }
   }
 
   main {
