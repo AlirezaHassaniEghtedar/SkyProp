@@ -213,6 +213,7 @@ body {
             border-radius: 8px;
             font-size: 1.5rem;
             cursor: pointer;
+            margin-block-start: 15px;
           }
 
           .upload-pics-section {
