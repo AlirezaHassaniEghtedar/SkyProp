@@ -335,6 +335,7 @@ body {
                         display: flex;
                         gap: 10px;
                         padding-block: 10px;
+                        flex-wrap: wrap;
                         
                         span {
                             font-size: 1.5rem;
