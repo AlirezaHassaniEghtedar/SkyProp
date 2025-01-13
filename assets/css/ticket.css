@@ -550,7 +550,7 @@ body {
           }
   
           .dashboard-section {
-            padding: 1rem;
+            padding: 1rem !important;
   
             h3 {
               font-size: 1.25rem;
