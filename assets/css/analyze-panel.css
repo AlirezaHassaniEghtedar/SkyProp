@@ -442,14 +442,14 @@ body {
                 display: flex;
                 gap: 25px;
                 flex-wrap: wrap;
-                
+
                 .box {
                     background: var(--color-blue-07);
                     border-radius: 8px;
                     padding: 15px 15px 15px 35px;
                     flex-grow: 1;
                     flex-shrink: 1;
-                    width: min(535px , 100%);
+                    width: min(535px, 100%);
                     border: 1px solid var(--color-dashboard-border);
 
                     a {
@@ -457,7 +457,7 @@ body {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        
+
                         .right {
                             display: flex;
                             align-items: center;
@@ -576,7 +576,7 @@ body {
     }
 }
 
-/* .sidebar.deactive {
+.sidebar.deactive {
     width: 75px;
     transition: all ease 0.3s;
 
@@ -608,12 +608,12 @@ body {
             }
         }
     }
-} */
+}
 
-/* .sidebar.deactive~.main-content {
+.sidebar.deactive~.main-content {
     margin-right: 75px;
     transition: all ease 0.3s;
-} */
+}
 
 
 
@@ -700,7 +700,7 @@ body {
                 & .market-closing-timer {
                     & .timer {
                         gap: 10px;
-                        
+
                         .box {
                             width: 80px;
                             height: 80px;
@@ -721,27 +721,27 @@ body {
                 & .ticket-questions-container {
                     & .box {
                         padding: 10px 10px 10px 15px;
-                        
+
                         & a {
                             & .right {
                                 & .titles {
                                     .title {
                                         font-size: 1rem;
-                                }
+                                    }
 
-                                span {
-                                    font-size: 0.85rem;
+                                    span {
+                                        font-size: 0.85rem;
+                                    }
                                 }
                             }
-                        }
 
-                        .left-arrow {
-                            max-width: 25px;
+                            .left-arrow {
+                                max-width: 25px;
+                            }
                         }
                     }
                 }
             }
         }
     }
-}
 }

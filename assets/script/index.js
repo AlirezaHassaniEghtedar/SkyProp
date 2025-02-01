@@ -4,12 +4,19 @@ const mobileNavMenuCloseBtn = document.querySelector('header nav .close-btn')
 const plansSectionHeaderBtns = document.querySelectorAll('.plans-section .plans-buttons button')
 const plansSectionSwipers = document.querySelectorAll('.plans-section .swiper-wrapper-container .swiper-container .swiper')
 
+const footerSupportBtn = document.querySelector('footer .support-container')
+const footerBackToTopBtn = document.querySelector('footer .back-to-top-container')
+
+
 
 // Event Listeners
 mobileMenuIcon.addEventListener('click', handleMobileMenuIconClick)
 mobileNavMenuCloseBtn.addEventListener('click', handleMobileMenuIconClick)
+footerBackToTopBtn.addEventListener('click' , handleBackToTop)
 
 plansSectionHeaderBtns.forEach(btn => btn.addEventListener('click', handlePlansSectionHeaderBtnClick))
+
+window.addEventListener('scroll', handleDisplayFooterBtns)
 
 // Functions
 function handleMobileMenuIconClick() {
@@ -31,6 +38,20 @@ function handleLoadSwiper(num) {
   plansSectionSwipers.forEach(item => {
     Number(item.id) === Number(num) ? item.classList.add('active') : item.classList.remove('active');
   })
+}
+
+function handleDisplayFooterBtns() {
+  if (window.scrollY > 200) {
+    footerBackToTopBtn.classList.add('active')
+    footerSupportBtn.classList.add('active')
+  } else {
+    footerBackToTopBtn.classList.remove('active')
+    footerSupportBtn.classList.remove('active')
+  }
+}
+
+function handleBackToTop () {
+  window.scrollTo({ top : 0 , behavior : 'smooth'})
 }
 
 
